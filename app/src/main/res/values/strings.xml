@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Buddy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="therapy">Therapy</string>
+    <string name="stats">Stats</string>
+    <string name="dailyCig">How many cigarettes do you smoke daily?</string>
+    <string name="timeFrame">Between which date would you like to analyze?</string>
+    <string name="totalCigLabel">Total number of smoked cigarettes</string>
+    <string name="totalCig">Total Cigarettes</string>
+    <string name="totalMutaLabel">Total number of DNA mutations</string>
+    <string name="totalMuta">Total Mutations</string>
+    <string name="btnCalc">Calculate</string>
+    <string name="mainResult">0 Years | 0 Months | 0 Days</string>
+
+    <string name="btnMusic">Play Music</string>
+    <string name="btnTTD">Things To Do  (Visual Aid)</string>
+
+    <string name="homeResetBtn">Reset</string>
+    <string name="homeDateLabel">Last Cigarette</string>
+</resources>

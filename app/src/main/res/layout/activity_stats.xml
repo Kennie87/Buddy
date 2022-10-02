@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Stats">
+
+
+    <TextView
+        android:id="@+id/totalMutaCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginRight="129dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/totalMutaLabel2"
+        app:layout_constraintTop_toBottomOf="@+id/totalMutaLabel" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <Button
+        android:id="@+id/startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_circle_24"
+        android:drawableRight="@drawable/ic_baseline_arrow_drop_down_circle_24"
+        android:text="01/01/2022"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/timeFrame"
+        app:layout_constraintTop_toBottomOf="@+id/timeFrame" />
+
+    <Button
+        android:id="@+id/endingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_circle_24"
+        android:drawableRight="@drawable/ic_baseline_arrow_drop_down_circle_24"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/timeFrame"
+        app:layout_constraintTop_toBottomOf="@+id/timeFrame" />
+
+    <TextView
+        android:id="@+id/dailyCig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="39dp"
+        android:text="@string/dailyCig"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeFrame"
+        android:layout_width="376dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/timeFrame"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyCigCount" />
+
+    <TextView
+        android:id="@+id/totalCigLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="@string/totalCigLabel"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_calculate" />
+
+    <TextView
+        android:id="@+id/totalCigLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/totalCig"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalCigLabel" />
+
+    <TextView
+        android:id="@+id/totalMutaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/totalMutaLabel"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalCigLabel2" />
+
+    <TextView
+        android:id="@+id/totalMutaLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/totalMuta"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalMutaLabel" />
+
+    <Button
+        android:id="@+id/bt_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginLeft="117dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
+        android:text="@string/btnCalc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startDate" />
+
+    <TextView
+        android:id="@+id/mainResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:text="@string/mainResult"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="21dp"
+        android:text="To"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/startDate"
+        app:layout_constraintTop_toBottomOf="@+id/timeFrame" />
+
+    <EditText
+        android:id="@+id/dailyCigCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:ellipsize="start"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Daily Smoking Count?"
+        android:inputType="number"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="@+id/dailyCig"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyCig" />
+
+    <TextView
+        android:id="@+id/totalCigCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginRight="129dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/totalCigLabel2"
+        app:layout_constraintTop_toBottomOf="@+id/totalCigLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
